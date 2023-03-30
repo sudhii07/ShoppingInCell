@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SignUp</title>
+<link rel="stylesheet" href="background.css">
+<style>
+	body{
+		border:2px solid black;
+		padding:140px;
+		margin:10px;
+	}
+	button{
+		background-color:red;
+	}
+	body .a {
+		border:5px solid black;
+		width:400px;
+		height:auto;
+		margin:auto;
+	}
+	a:hover{
+		color:red;
+	}
+	button{
+		height:25px;
+		width:60px;
+	}
+	button:hover{
+		background-color:white;
+		color:black;
+	}
+</style>
+</head>
+<body>
+<center><h1>SignUp</h1></center>
+<div class="a"> <br>
+<center> 
+<form action="signup" method="post">
+id: <input type="number" name="id"> <br> <br>
+Name: <input type="text" name="name"><br><br>
+Mobile: <input type="number" name="mobile"><br><br>
+Email: <input type="email" name="email"><br><br>
+Password: <input type="password" name="password"><br><br>
+Role:-   <br>  <input type="radio" name="role" value="admin"> Admin<br>
+               <input type="radio" name="role" value="customer"> Customer<br> <br>
+ <button>Signup</button>
+<button type="reset">Cancel</button><br><br>
+</form>
+</center>
+</div> <br>
+<center><a href="login.html">Already have account? Click here to Login</a></center>
+</body>
+</html>

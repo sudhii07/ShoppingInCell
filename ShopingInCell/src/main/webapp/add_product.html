@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Products</title>
+<link rel="stylesheet" href="background.css">
+
+<style>
+	body{
+		border:2px solid black;
+		padding:125px;
+		margin:10px;
+	}
+	button{
+		background-color:red;
+	}
+	body .a {
+		border:5px solid black;
+		width:400px;
+		height:auto;
+		margin:auto;
+	}
+	h4 :hover{
+		color:red;
+	}
+	button{
+		height:25px;
+		width:auto;
+	}
+	button:hover{
+		background-color:white;
+		color:black;
+	}
+
+</style>
+</head>
+<body>
+<center>
+<div class="a"> 
+<h1>Add Products</h1>
+<form action="add_product" method="post"> 
+Name:-<input type="text" name="name" required="required"><br> <br>
+Price:-<input type="text" name="price" required="required"><br> <br>
+Category:-
+<select name="category">
+	<option value="Food">Food</option>
+	<option value="shoe">Shoe</option>
+	<option value="watch">Watch</option>
+	<option value="fashion">Fashion</option>
+	<option value="cosmetics">Cosmetics</option>
+</select> <br> <br>
+<button>Add</button>
+<button type="reset">Cancel</button>
+</form> <br>
+</div> <br>
+<a href="admin_home.html"><button>Back</button></a>
+</center>
+</body>
+</html>
